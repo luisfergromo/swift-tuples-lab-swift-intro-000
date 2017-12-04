@@ -16,10 +16,7 @@
  */
 // write your code here
 
-
-
-
-
+var person: (String,Int) = ("Josh Lucas", 75)
 
 
 
@@ -27,105 +24,57 @@
  ### 2. Print out "<Name> is <Age> years old" using the tuple you created in Question 1.
  */
 // write your code here
-
-
-
-
-
-
-
+print("\(person.0) is \(person.1) years old")
 
 /*: question3
  ### 3. It is the person's birthday! Increment the person's age by one year that you created in Question 1.
  */
 // write your code here
-
-
-
-
-
-
-
+person.1 += 1
 
 /*: question4
  ### 4. Print out "Happy <Age> birthday, <Name>!" using the `person` variable.
  */
 // write your code here
 
-
-
-
-
-
-
+print("Happy \(person.1) birthday, \(person.0)!")
 
 /*: question5
  ### 5. Create another person variable called `someone` using _named_ fields for the name and age.
  */
 // write your code here
-
-
-
-
-
-
-
+var someones: (String,Int) = ("Tony",30)
 
 /*: question6
  ### 6. Print out "<Name> is <Age> years old" for the `someone` variable you created in Question 5.
  */
 // write your code here
-
-
-
-
-
-
+print("\(someones.0) is \(someones.1) years old")
 
 /*:
  ### 7. It is `someone`'s birthday! Increment `someone`'s age by one year.
  */
 // write your code here
 
-
-
-
-
-
+someones.1 += 1
 
 /*:
  ### 8. Print out "Happy <Age> birthday, <Name>!" using the `someone` variable.
  */
 // write your code here
-
-
-
-
-
-
-
+print("Happy \(someones.1) birthday, \(someones.0)!")
 
 /*:
  ### 9. Create a _constant_ tuple called `human`, with named fields for `name` and `age`.
  */
 // write your code here
-
-
-
-
-
-
-
+let human: (String,Int) = ("Ane", 14)
 
 /*:
  ### 10. Can you change `human`'s age? Why or why not?
  */
-
-
-
-
-
-
-
+//Yo, you can't modify the values also in the tuples because the're constants
+human.0 = "Tony"
+human.1 = 43
 
 //: Check [here](https://github.com/learn-co-curriculum/swift-tuples-lab/blob/solution/Tuples.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
